@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="vue" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="Less File" />
+        <option value="Vue Single File Component" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/master" />
+  </component>
+  <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="a93edd05-056f-4a66-8a47-d0f6e2344494" />
+        <option name="url" value="https://github.com/ruall/web2021.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="ProjectId" id="1uweYyF9VHuQoaGiTmQ1vs4R0rF" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="format.on.save" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="Less" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\学习视频\web\webpack-study" />
+      <recent name="D:\学习视频\web\axios\src" />
+      <recent name="D:\学习视频\web\axios\server" />
+      <recent name="D:\学习视频\web\promise" />
+      <recent name="D:\学习视频\web\js" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\学习视频\web\vue-study\vueBase" />
+      <recent name="D:\学习视频\web\vue-study\components" />
+      <recent name="D:\学习视频\web\webpack-study\src" />
+      <recent name="D:\学习视频\web\webpack\js" />
+      <recent name="D:\学习视频\web\模块化\ES6_modular\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.test">
+    <configuration name="call-apply-bind.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/web/ES/call-apply-bind.html?_ij_reload" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/模块化/libs/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="JavaScript 调试.call-apply-bind.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Admin\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="vue" />
+      <created>1625581130708</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1625581130708</updated>
+      <workItem from="1625581132154" duration="1994000" />
+      <workItem from="1625583154934" duration="770000" />
+      <workItem from="1625583941670" duration="16000" />
+      <workItem from="1625662976007" duration="598000" />
+      <workItem from="1625663588245" duration="215000" />
+      <workItem from="1625663815039" duration="190000" />
+      <workItem from="1625664017133" duration="37000" />
+      <workItem from="1625664071269" duration="2160000" />
+      <workItem from="1625753881606" duration="44000" />
+      <workItem from="1625829967583" duration="2479000" />
+      <workItem from="1625835469773" duration="4162000" />
+      <workItem from="1626097289677" duration="36000" />
+      <workItem from="1626097334280" duration="2387000" />
+      <workItem from="1626179627776" duration="767000" />
+      <workItem from="1626183843274" duration="1852000" />
+      <workItem from="1626185979917" duration="16000" />
+      <workItem from="1626186268247" duration="1360000" />
+      <workItem from="1626262391229" duration="7368000" />
+      <workItem from="1626352378984" duration="1952000" />
+      <workItem from="1626439408236" duration="2396000" />
+      <workItem from="1626582510082" duration="5280000" />
+      <workItem from="1626698734670" duration="17000" />
+      <workItem from="1626698761496" duration="2293000" />
+      <workItem from="1626782807855" duration="2966000" />
+      <workItem from="1626871614277" duration="2662000" />
+      <workItem from="1626877391706" duration="67000" />
+      <workItem from="1626877504495" duration="428000" />
+      <workItem from="1626877945440" duration="317000" />
+      <workItem from="1626953966542" duration="5942000" />
+      <workItem from="1627302878129" duration="618000" />
+      <workItem from="1627304896052" duration="5075000" />
+      <workItem from="1627380595088" duration="2975000" />
+      <workItem from="1627472014845" duration="1031000" />
+      <workItem from="1627480465788" duration="3021000" />
+      <workItem from="1627557270069" duration="1305000" />
+      <workItem from="1627642483684" duration="351000" />
+      <workItem from="1627642853250" duration="186000" />
+      <workItem from="1627643049468" duration="777000" />
+      <workItem from="1627812162136" duration="5039000" />
+      <workItem from="1627973945716" duration="3039000" />
+      <workItem from="1628051348239" duration="9716000" />
+      <workItem from="1628132146504" duration="12660000" />
+      <workItem from="1628218876008" duration="10926000" />
+      <workItem from="1628480850009" duration="12947000" />
+      <workItem from="1628564499963" duration="16784000" />
+      <workItem from="1628649891612" duration="16665000" />
+      <workItem from="1628669167219" duration="73000" />
+      <workItem from="1628736450667" duration="3841000" />
+      <workItem from="1628750171560" duration="2284000" />
+      <workItem from="1628821077712" duration="13718000" />
+      <workItem from="1628915859253" duration="8775000" />
+      <workItem from="1629007766318" duration="7018000" />
+      <workItem from="1629079141919" duration="20433000" />
+      <workItem from="1629126145993" duration="339000" />
+      <workItem from="1629126495208" duration="460000" />
+      <workItem from="1629127250609" duration="1743000" />
+      <workItem from="1629165661667" duration="1185000" />
+      <workItem from="1629167172014" duration="929000" />
+      <workItem from="1629168116111" duration="66000" />
+      <workItem from="1629168190191" duration="25079000" />
+      <workItem from="1629246895426" duration="34553000" />
+      <workItem from="1629336113829" duration="18393000" />
+      <workItem from="1629420911203" duration="21447000" />
+      <workItem from="1629508427262" duration="14762000" />
+      <workItem from="1629534822451" duration="2650000" />
+      <workItem from="1629537503221" duration="20000" />
+      <workItem from="1629537831956" duration="140000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1629532146714</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1629532146714</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1629532360647</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1629532360647</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test">
+      <created>1629532774563</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1629532774563</updated>
+    </task>
+    <task id="LOCAL-00004" summary="test1">
+      <created>1629534229587</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1629534229587</updated>
+    </task>
+    <task id="LOCAL-00005" summary="test1">
+      <created>1629534429444</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1629534429444</updated>
+    </task>
+    <task id="LOCAL-00006" summary="vue">
+      <created>1629534655651</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1629534655651</updated>
+    </task>
+    <task id="LOCAL-00007" summary="vue">
+      <created>1629535013402</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1629535013402</updated>
+    </task>
+    <task id="LOCAL-00008" summary="vue">
+      <created>1629536710074</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1629536710074</updated>
+    </task>
+    <task id="LOCAL-00009" summary="vue">
+      <created>1629536911079</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1629536911079</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/vue-study/vueComponents/vuecomponents" />
+    </ignored-roots>
+    <MESSAGE value="test" />
+    <MESSAGE value="test1" />
+    <MESSAGE value="vue" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
