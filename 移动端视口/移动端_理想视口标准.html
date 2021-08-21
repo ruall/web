@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scale=no,viewport-fit=cover"/>
+    <title>移动端_布局视口</title>
+</head>
+<body>
+<div id="info"></div>
+<script type="text/javascript">
+    const layoutWidth = document.documentElement.clientWidth
+    const info = document.getElementById('info')
+    info.innerHTML = '您的设备的布局视口宽度为：' + layoutWidth + 'px(css像素)'
+</script>
+</body>
+</html>
