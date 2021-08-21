@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="1">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/web.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Ajax/node_modules/.bin/mime" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Ajax/node_modules/.bin/mime.cmd" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Ajax/node_modules/.bin/mime.ps1" afterDir="false" />
@@ -2298,7 +2293,6 @@
       <change afterPath="$PROJECT_DIR$/webpack-study/node_modules/@webassemblyjs/wast-printer/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/webpack-study/node_modules/@xtuc/ieee754/LICENSE" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/webpack-study/node_modules/@xtuc/ieee754/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/node_modules/@xtuc/ieee754/dist/.gitkeep" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/webpack-study/node_modules/@xtuc/ieee754/dist/index.cjs.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/webpack-study/node_modules/@xtuc/ieee754/index.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/webpack-study/node_modules/@xtuc/ieee754/package.json" afterDir="false" />
@@ -15247,7 +15241,6 @@
       <change afterPath="$PROJECT_DIR$/模块化/libs/home.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/模块化/libs/package.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/模块化/m1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15436,7 +15429,7 @@
       <workItem from="1629537503221" duration="20000" />
       <workItem from="1629537831956" duration="140000" />
       <workItem from="1629537973569" duration="384000" />
-      <workItem from="1629538402829" duration="1071000" />
+      <workItem from="1629538402829" duration="1383000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1629532146714</created>
@@ -15515,7 +15508,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629538270775</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="1">
+      <created>1629541633058</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1629541633058</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
