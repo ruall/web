@@ -5,216 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="1">
-      <change afterPath="$PROJECT_DIR$/Ajax/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax/src/ajax1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax/src/ajax解析json.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax/src/ajax请求异常与超时处理.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax/src/cors解决跨域.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax/src/jquery封装ajax.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax/src/jquery封装的jsonp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ajax/src/jsonp解决跨域.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/Class.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/ES6对象继承.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/JSON实现深拷贝.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/Map.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/Set集合.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/Symbol创建对象属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/call-apply-bind.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/class的get-set.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/rest参数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/spread扩展运算符.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/严格模式.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/动态属性.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/参数默认值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/对象的静态属性和方法.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/对象继承.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/数据的浅拷贝.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/数组与对象的解构赋值.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/箭头函数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/迭代器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ES/递归实现深拷贝.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/Array.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/Drage.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/banner.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/drag1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/img/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/img/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/img/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/img/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/img/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/js/jquery-1.10.1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/js/my_jQuery_plugin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/tab.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/test1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/test2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/test3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/回到顶部.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/扩展插件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/箭头函数.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/自定义动画.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/解构复制.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/贪食蛇.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/轮播图.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/JS/闭包.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/api_data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/api_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/api_project.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/api_project.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/locale.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/pt_br.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/zh.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/locales/zh_cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/utils/handlebars_helper.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/utils/send_sample_request.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/utils/send_sample_request_utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/diff_match_patch.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/handlebars.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/list.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/lodash.custom.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/path-to-regexp/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/path-to-regexp/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/polyfill.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/prism.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/prism.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/require.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/semver.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/public/apidoc/vendor/webfontloader.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/routers/api/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/routers/api/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/server/yarn.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/src/axios取消请求.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/src/axios取消请求和拦截器配合使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/src/axios常用配置项.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/src/axios批量发送请求.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/src/axios的基本使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/src/axios请求拦截器.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/test/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/test/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axios/test/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/access.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/intro.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/middleware.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/public/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/route-2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/route.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/routes/admin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/routes/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/session/session.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/中间件.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/express/路由器.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodeJS/test1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/npm/自定义npm包/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/npm/自定义npm包/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/npm/自定义包测试/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/npm/自定义包测试/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/npm/自定义包测试/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/Promise.prototype.catch.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/Promise.resolve和Promise.reject.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/Promise的几个关键问题1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/Promise的几个关键问题2.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/Promise的几个关键问题3.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/Promise的几个关键问题4.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/Promise的几个关键问题5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/Promise的几个关键问题6.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/async和await.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/await优化ajax.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/await的原理.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/js错误类型的说明.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/函数对象和实例对象.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/初始Promise.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/回调函数的分类.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/宏队列与微队列.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/封装一个简单的Ajax.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/promise/纯回调封装ajax.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/js/vue.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vueBase/Object.defineProperty的使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vueBase/app.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vueBase/components/myButton.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vueBase/vue中过渡动画的添加.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vueBase/vue的基本使用.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vueBase/vue自定义组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vueBase/列表的过滤.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vueBase/响应式数据针对对象和数组的区别.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vueBase/引入组件.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vueBase/计算属性和watch监听的使用及区别.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/css/test.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/css/test1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/css/test1.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/css/test1.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/imgs/lh.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/imgs/lx.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/imgs/react.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/imgs/vue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/js/module1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/js/module2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/js/module3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/src/json/test.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack-study/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/build/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/build/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/build/module1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/build/module2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/build/module3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/build/module4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/build/module5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/src/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/src/module1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/src/module2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/src/module3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/src/module4.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/ES6_modular/src/module5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/libs/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/libs/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/模块化/m1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/prettier.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/web.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -404,6 +195,7 @@
       <workItem from="1629537831956" duration="140000" />
       <workItem from="1629537973569" duration="384000" />
       <workItem from="1629538402829" duration="1673000" />
+      <workItem from="1629542170410" duration="706000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1629532146714</created>
@@ -496,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629541914388</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="1">
+      <created>1629542279346</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1629542279346</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
