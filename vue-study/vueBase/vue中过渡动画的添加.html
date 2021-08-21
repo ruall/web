@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0"/>
+    <title>Title</title>
+    <script src="../js/vue.js"></script>
+    <style>
+        .box {
+            width: 300px;
+            height: 500px;
+            background-color: hotpink;
+        }
+
+        @keyframes slide-enter {
+            0% {
+                transform: scale(0);
+                height: 500px;
+            }
+            50% {
+                transform: scale(1.5);
+                background-color: pink;
+            }
+            100% {
+                transform: scale(1);
+                background-color: pink;
+            }
+        }
+
+        .slide-enter-active {
+            animation: slide-enter 2s;
+        }
+
+        .slide-leave-active {
+            animation: slide-enter 2s reverse;
+        }
+    </style>
+</head>
+<body>
+
+<div id="app">
+    <transition name="slide">
+        <div class="box" v-show="isShow">{{msg}}</div>
+    </transition>
+    <button @click="isShow = !isShow">切换</button>
+    <p>{{dateNow | timeFormat}}</p>
+</div>
+
+<script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            msg: 'aaaa',
+            isShow: true,
+            dateNow: Date.now()
+        },
+        filters: {
+            timeFormat(val) {
+                return '当前时间为：' + val
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #content {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<h3>该页面测试ajax请求</h3>
+<button id="btn">点击发送ajax-get请求</button>
+<div id="content"></div>
+<script>
+
+    const btn = document.getElementById('btn')
+    const content = document.getElementById('content')
+
+    /**
+     * isLoading 避免数据多次请求
+     * */
+    let xhr, isloading;
+
+    btn.onclick = function () {
+        if (isloading) xhr.abort()
+
+        xhr = new XMLHttpRequest()
+
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4) {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    isloading = false
+                    const {name, age, sex} = xhr.response
+                    content.innerHTML = (`<ul><li>${name}</li><li>${age}</li><li>${sex}</li></ul>`)
+                }
+            }
+        }
+
+        xhr.open('GET', 'http://127.0.0.1:8080/get_person_delay  ')
+
+        xhr.responseType = 'json'
+
+        xhr.onerror = function () {
+            console.log('请求出错了');
+        }
+
+        //超时时间
+        xhr.timeout = 2000
+
+        xhr.ontimeout = function () {
+            alert('网速不给力，请求超时')
+        }
+
+        xhr.send()
+        isloading = true
+    }
+
+</script>
+</body>
+</html>

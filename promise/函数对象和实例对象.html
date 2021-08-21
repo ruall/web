@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    /***
+     * 函数对象、实例对象
+     *      1、函数对象：将函数作为对象使用时，简称为函数对象
+     *      2、实例对象：new构造函数或类产生的对象，称之为实例对象
+     * @param name
+     * @param age
+     * @constructor
+     */
+
+    // 函数对象
+    function Person(name, age) {
+        this.name = name
+        this.age = age
+    }
+
+    Person.name = 1
+    console.log(Person.name); //Person   name属性固定输出函数对象名称
+    Person.a = 1 //将Person 看成一个对象
+    console.log(Person.a);
+
+    const p = new Person('张三', 18) //p就是Person的实例对象
+    console.log(p);
+</script>
+
+</body>
+</html>

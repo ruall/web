@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    // 待拷贝数据
+    const obj = {
+        name: 'A',
+        tags: ['A', 'B', 'C'],
+        flag: {
+            name: 'A'
+        },
+        change() {
+            console.log('改变');
+        }
+    }
+
+
+    // 拷贝思路如下
+    //创建数据容器
+
+    // const newObj = {}
+    //
+    // //name
+    // newObj.name = obj.name
+    //
+    // //tags
+    // newObj.tags = []
+    // newObj.tags[0] = obj.tags[0]
+    // newObj.tags[1] = obj.tags[1]
+    // newObj.tags[2] = obj.tags[2]
+    //
+    // //founder
+    // newObj.flag = {}
+    // newObj.flag.name = obj.flag.name
+    //
+    // //change
+    // newObj.change = obj.change.bind(newObj)
+    //
+    // newObj.flag.name = 'AA'
+    // console.log(obj);
+    // console.log(newObj);
+
+
+    // 拷贝方法封装
+    //封装一个函数
+    function deepClone(data) {
+        //创建一个容器
+        let container;
+        let type = getDataType(data)
+        if (type === 'Object') {
+            container = {}
+        } else if (type === 'Array') {
+            container = []
+        }
+
+        //遍历数据 for in
+        for (let i in data) {
+            //获取键值的类型
+            let type = getDataType(data[i])
+            //判断类型
+            if (type === 'Object' || type === 'Array') {
+                //如果判断为真 递归调用
+                container[i] = deepClone(data[i])
+            } else {
+                // 如果键值为非引用数据类型 直接复制
+                container[i] = data[i]
+            }
+        }
+        return container
+    }
+
+    let newObj = deepClone(obj)
+    newObj.flag.name = 'newA'
+
+    console.log(obj);
+    console.log(newObj);
+
+    //封装一个函数 判断传入数据类型
+    function getDataType(data) {
+        return Object.prototype.toString.call(data).slice(8, -1)
+    }
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab切换</title>
+    <script src="./js/jquery-1.10.1.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .title {
+            width: 300px;
+            height: 50px;
+        }
+
+        .title ul, .txt ul {
+            list-style: none;
+        }
+
+        .title ul li {
+            cursor: pointer;
+            float: left;
+            text-align: center;
+            line-height: 50px;
+            width: 70px;
+            height: 50px;
+        }
+
+        .title ul li.cur, .txt ul li {
+            background-color: #00ffad;
+            color: red;
+        }
+
+        .txt {
+            width: 300px;
+            height: 300px;
+        }
+
+        .txt ul li {
+            float: left;
+            text-align: center;
+            line-height: 30px;
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="title">
+    <ul>
+        <li class="cur">tab1</li>
+        <li>tab2</li>
+        <li>tab3</li>
+    </ul>
+</div>
+
+<div class="txt">
+    <ul>
+        <li>text1</li>
+        <li style="display: none">text2</li>
+        <li style="display: none">text3</li>
+    </ul>
+</div>
+<script>
+    let title = $('.title ul li');
+    let txt = $('.txt ul li');
+
+    let curIndex = 0;
+    $(title).click(function () {
+        let index = $(this).index()
+        if (index == curIndex) {
+            return
+        }
+        // $(this).addClass('cur').siblings().removeClass('cur')
+        // $(txt).eq(index).show().siblings().hide()
+        $(this).addClass('cur')
+        $(title).eq(curIndex).removeClass('cur')
+        $(txt).eq(curIndex).hide()
+        $(txt).eq(index).show()
+        curIndex = index
+    })
+</script>
+</body>
+</html>

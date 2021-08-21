@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //ES6允许给函数参数赋值初始值
+    //1、参数直接设置默认值，具有默认值的参数，位置一般要靠后
+    function add(a, b, c = 10) {
+        return a + b + c
+    }
+
+    console.log(add(1, 2));
+
+    //2、与解构赋值结合使用 解构赋值的形式先后顺序不影响
+    function connect({host = '127.0.0.125', port, pass, dbname}) {
+        console.log(host)
+        console.log(port)
+        console.log(pass)
+        console.log(dbname)
+    }
+
+    connect({
+        host: '127.0.0.1',
+        port: 27017,
+        pass: 'root',
+        dbname: 'project'
+    })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+    Promise 是什么
+       1、抽象表达：
+           a、Promise 是一门新的技术（ES6提出的）
+           b、Promise 是JS中异步编程的新方案（旧方案--纯回调）
+       2、具体表达：
+           a、从语法上来说：Promise是一个内置构造函数
+           b、从功能上来说：Promise的实例对象剋用来封装一个异步操作，并可以获取其成功/失败的值
+
+    注意点：
+        1、Promise 不是回调，是一个内置的构造函数，是程序员自己new调用的
+        2、new Promise的时候，要传入一个回调函数，它是同步的回调，会立即在主线程上执行，它被称为executor函数
+        3、每一个Promise实例都有三种状态，分别为：初始化（pending）、成功（fulfilled）、失败（rejected）
+        4、每一个Promise实例在刚被new出来的那一刻，状态都是初始化（pending）
+        5、executor函数会接收两个参数，他们都是函数，分别用形参：resolve、reject接收
+           a、调用resolve，会让Promise实例状态变为：成功（fulfilled），同时可以指定成功的value
+           b、调用reject，会让Promise实例状态变为：失败（rejected），同时可以指定失败的reason
+
+
+    1、重要语法
+        new Promise(executor)构造函数
+        Promise.prototype.then 方法
+
+    2、基本编码流程
+        a、创建Promise的实例对象（pending状态），传入executor函数
+        b、在executor中启动异步任务（定时器、ajax请求）
+        c、根据异步任务的结果，做不同处理：
+            a-1、如果异步任务成功了：
+                我们调用resolve(value)，让Promise实例对象状态变为成功（fulfilled），同时指定成功的value
+            a-2、如果异步任务失败了：
+                我们调用reject(reason)，让Promise实例对象状态变为失败（rejected），同时指定失败的reason
+        d、通过then方法为Promise的实例指定成功、失败的回调函数，来获取成功的value、失败的reason
+            注意：then方法所指定的：成功的回调、失败的回调，都是异步的回调
+
+    3、关于状态的注意点：
+        a、三个状态：
+            pending:未确定的-----初始状态
+            fulfilled:成功的-----调用resolve()后的状态
+            rejected:失败的------调用reject()后的状态
+        b、两种状态改变
+            pending ==> fulfilled
+            pending ==> rejected
+        c、状态只能改变一次
+        d、一个Promise指定多个成功/失败回调函数，都会调用
+-->
+
+<script type="text/javascript">
+    //创建一个Promise实例对象
+    const p = new Promise((resolve, reject) => {
+        /*setTimeout(() => {
+            resolve(100)
+        }, 2000)*/
+
+        const xhr = new XMLHttpRequest()
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4) {
+                if (xhr.status === 200) {
+                    resolve(xhr.response)
+                } else {
+                    reject(xhr.response)
+                }
+            }
+        }
+        xhr.open('GET', 'http://poetry.apiopen.top/sentences')
+        xhr.responseType = 'json'
+        xhr.send()
+
+    })
+    p.then((value) => {
+        console.log('成功了', value); //成功的回调
+    }, (reason) => {
+        console.log('失败了', reason); //失败的回调
+    })
+
+    /*    p.then((value) => {
+            console.log('成功了1', value); //成功的回调
+        }, (reason) => {
+            console.log('失败了1', reason); //失败的回调
+        })*/
+
+    console.log('@');
+
+</script>
+
+</body>
+</html>

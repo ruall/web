@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ES严格模式</title>
+</head>
+<body>
+
+<script>
+    /**
+     * 1、严格模式的声明
+     *      1-全局声明
+     *      2-函数内声明
+     * */
+        // 'use strict'
+
+        // function main() {
+        //     'use strict'
+        // }
+
+        //新建一个对象
+    let car = {
+            name: '汽车',
+            run: function () {
+                console.log('跑起来了')
+            }
+        }
+    //defineProperties() 和 create() 方法一摸一样
+    let Passat = Object.create(car, {
+        brand: {
+            //设置属性的值
+            value: '帕萨特',
+            //属性值是否可以修改
+            writable: true,
+            //属性是否可以删除
+            configurable: true,
+            //属性是否可以枚举（遍历）
+            enumerable: true
+        },
+        price: {
+            // get是一个对象的方法，无需手动调用
+            get: function () {
+                return 28000 + '元'
+            },
+            //set设置
+            set: function (val) {
+                this.newPrice = val + '元'
+
+                return val
+            }
+        }
+    })
+
+    // console.log(Passat)
+    Passat.run()
+    // Passat.brand = '大众'
+    // // delete Passat.brand
+    // for (let i in Passat) {
+    //     console.log('----' + i);
+    // }
+    // console.log(Passat)
+    Passat.price = 30000
+    console.log(Passat);
+</script>
+
+</body>
+</html>

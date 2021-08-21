@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"></script>
+</head>
+<body>
+
+<button id="btn">批量发送请求</button>
+
+<script type="text/javascript">
+
+    const btn = document.getElementById('btn')
+    btn.onclick = async () => {
+        axios.all([
+            axios.get('http://localhost:5000/test1'),
+            axios.get('http://localhost:5000/test2?delay=3000'),
+            axios.get('http://localhost:5000/test3')
+        ]).then(
+            response => console.log('请求成功', response),
+            error => console.log('请求失败', error)
+        )
+    }
+
+</script>
+
+</body>
+</html>

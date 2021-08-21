@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    // 声明
+    const s = new Map()
+
+    //添加元素
+    let key = {}
+    s.set('5a', '武当山')
+    s.set(key, '黄山')
+
+    //获取元素
+    console.log(s.get('5a'));
+    console.log(s.get(key));
+
+    //删除元素
+    // s.delete('5a')
+
+    //元素个数
+    console.log(s.size);
+
+    //清空
+    // s.clear()
+    console.log(s);
+</script>
+</body>
+</html>

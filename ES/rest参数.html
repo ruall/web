@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    function main(...args) {
+        //1、使用arguments获取实参
+        console.log(arguments)
+
+        //2、rest参数
+        console.log(args)
+    }
+
+    main(1, 2, 3, 1231, 4, 14, 12, 421, 4)
+
+    function fn(a, b, ...args) {
+        console.log(a)
+        console.log(b)
+        console.log(args)
+    }
+
+    fn(1, 2, 3, 4, 5, 6, 7)
+</script>
+
+</body>
+</html>

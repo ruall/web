@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax</title>
+    <style>
+        #content {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<h3>该页面测试ajax请求</h3>
+<button id="btn">点击发送ajax-get请求</button>
+<div id="content"></div>
+<script type="text/javascript">
+    //获取按钮
+    const btn = document.getElementById('btn')
+    const content = document.getElementById('content')
+    //绑定监听事件
+    btn.onclick = function () {
+        //1、创建xhr实例对象
+        const xhr = new XMLHttpRequest()
+
+        //xhr 内部有5种状态，值分别为0、1、2、3、4
+        //xhr实例对象，在实例出来的那一刻状态就是0
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4) {
+                console.log(xhr.response);
+                content.innerText = xhr.response
+            }
+        }
+
+        /**
+         * 1、形如：key=value&key=value 就是urlencoded编码
+         * 2、形如：/xx/xxx/参数1/参数2 就是params参数
+         * */
+        //2、指定发送请求的：method、url、参数
+        // xhr.open('GET', 'http://127.0.0.1:8080/test_get?name=张三&age=18')
+        // xhr.open('POST', 'http://127.0.0.1:8080/test_post/张三/18?name=张三&age=18')
+        xhr.open('POST', 'http://127.0.0.1:8080/test_post')
+
+        //追加响应头用于标识携带请求体参数的编码形式 --- urlencoded
+        // xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+        //追加响应头用于标识携带请求体参数的编码形式 --- json
+        xhr.setRequestHeader('Content-type', 'application/json')
+
+        //3、发送请求
+        // xhr.send('name=张三&age=18')//携带urlencoded编码形式的请求体参数
+        const person = {name: '张三', age: 18}
+        xhr.send(JSON.stringify(person))
+    }
+</script>
+</body>
+</html>

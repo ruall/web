@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    class Phone {
+        get price() {
+            return 2999
+        }
+
+        set price(v) {
+            this.jiange = v
+            console.log(v)
+        }
+
+        //静态属性
+        static get size() {
+            return '5.5inch'
+        }
+
+        static set size(v) {
+            this.chicun = v
+        }
+    }
+
+    const t = new Phone()
+    t.price = 1599
+    console.log(t);
+
+    //静态属性的获取
+    Phone.size = '6inch'
+    console.dir(Phone);
+
+
+    //对象合并
+    const A = {
+        name: 'AAA'
+    }
+
+    const B = {
+        pos: ['aaa', 'bbb', 'ccc'],
+        name: 'BBB'
+    }
+
+    const C = {
+        name: 'CCC'
+    }
+
+    const res = Object.assign(A, B, C)
+    console.log(res);
+</script>
+
+</body>
+</html>

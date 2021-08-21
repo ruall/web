@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+
+<body>
+<script>
+    /**
+     * 打印九九乘法表
+     * */
+    /* for (let j = 1; j <= 9; j++) {
+
+         for (let k = 1; k <= j; k++) {
+             if (k <= j) {
+                 document.write(k + 'x' + j + '=' + k * j + '&nbsp;&nbsp;&nbsp;')
+             }
+         }
+         document.write('<br/>')
+     }
+
+     /!**
+      * 打印倒三角
+      * *!/
+     for (let j = 0; j < 10; j++) {
+         for (let k = 10; k > j; k--) {
+             document.write('* &nbsp;')
+         }
+         document.write('<br/>')
+     }
+
+     /!**
+      *  打印100以内所有的质数
+      **!/
+     for (let i = 2; i < 100; i++) {
+         let flag = true;
+         for (let j = 2; j < i; j++) {
+             // for (let j = 2; j <= i ** 0.5; j++) {  性能优化： i的平方根查找因数缩短循环次数
+             if (i % j === 0) {
+                 flag = false
+             }
+         }
+         if (flag) {
+             console.log(i)
+         }
+     }
+
+     /!**
+      * 创建对象
+      * *!/
+     let obj = {};
+     obj.age = 10;
+     obj.name = '张三';
+     obj.sex = '男';
+     obj.height = '180cm'
+
+     for (let n in obj) {
+         console.log(`${n} ---- ${obj[n]}`)
+     }
+
+
+     function fn(a, b) {
+         a++;
+         console.log('a=', a);
+         b = {name:'猪八戒'}; //改变量不影响值的变化
+         // b.name = '猪八戒'; //改对象影响值的变化
+         console.log('b=', b);
+     }
+
+     let a = 10;
+     let b = {name: '孙悟空'}
+     fn(a, b);
+     console.log('a=', a);
+     console.log('b=', b);
+
+
+
+     /!**
+      * 如果在函数中声明变量时如果不使用var或let，则变量会变成全局变量（一定要注意）
+      * *!/
+     function fn() {
+         a = 10;
+         b = 20;
+     }
+
+     fn()
+
+     console.log(a, b)   //10 20*/
+
+
+    /*let a = 10;
+
+    function fn() {
+        a = 20;
+        var a = 30;
+        console.log(a)  // 30
+    }
+
+    fn();
+    console.log(a) //10 */
+
+
+    /*    let a = 10;
+        function fn(a){
+            a= 20;
+            console.log(a) // 20
+        }
+
+        fn();
+        console.log(a) // 10*/
+
+    /*let a = 10;
+    function fn(a){
+        console.log(a) //10
+        a= 20;
+        console.log(a) // 20 该变量不影响存储值的变化
+    }
+
+    fn(a);
+    console.log(a); // 10*/
+
+
+    /**
+     * 构造函数的执行流程：
+     *      1.创建一个新的对象
+     *      2.将这个新的对象设置为函数中的this
+     *      3.执行函数中的代码
+     *      4.将新建的对象返回
+     * */
+
+    /*function Person(name, age) {
+        this.name = name;
+        this.age = age;
+        // this.sayHello = sayHello;
+    }
+
+    function Dog(name, age) {
+        this.name = name;
+        this.age = age
+    }
+
+    /!*function sayHello(){
+        alert(`大家好，我是${this.name}`)
+    }*!/
+
+    //将sayHello添加到原型中
+    Person.prototype.sayHello = function(){
+        alert(`大家好，我是${this.name}`)
+    }
+
+    let per = new Person('张三', 18)
+    let dog = new Dog('旺财', 10)
+    per.sayHello();
+    console.log(per)
+    console.log(dog)*/
+
+    let arr = ['张三', '李四', '王五', '赵六'];
+
+
+    //获取数组内各元素下标
+    for (let i in arr) {
+        console.log(arr[i])
+    }
+
+
+    //直接获取数组元素
+    for (let i of arr) {
+        console.log(i)
+    }
+
+
+    // push()向数组的最后添加一个或多个元素
+    let res = arr.push('abc', 'def')
+    console.log(res)
+
+    // pop()从数组的最后删除一个元素
+    arr.pop()
+    console.log(arr)
+
+
+    // unshift() 向数组前添加一个或多个元素，并返回新的长度
+    let res1 = arr.unshift('111', '222', '333')
+
+    //shift()从数组前删除一个元素
+    arr.shift();
+
+    console.log(arr)
+
+    /*
+    * slice(参数1,参数2)用来截取数组  该方法不会影响原来的数组，将结果作为返回值
+    *   参数1：截取的起始位置索引（包含起始位置）
+    *   参数2：截取的结束位置索引（不包含结束位置）
+    * 只写一个参数则会一直截取到最后
+    * 索引可以传负值，-1表示倒数第一个，-2表示倒数第二个
+    * */
+
+    let res2 = arr.slice(1, 3)
+    console.log(res2)
+
+    /**
+     * splice(参数1,参数2,参数3) 用来删除、替换、添加数组中的元素，该方法会对原数组产生影响
+     * 参数1：删除元素的起始位置索引
+     * 参数2：删除的数量
+     * 参数3：可以传递多个参数，这些参数会作为新的元素添加到数组中
+     * 返回值为被删除的元素组成的数组
+     * */
+
+        // let res3 = arr.splice(0,2); //删除指定的元素
+        // let res3 = arr.splice(0,2,'ABC','DEF'); //替换指定元素
+        // let res3 = arr.splice(0,2,'ABC','DEF','GHI');
+    let res3 = arr.splice(0, 0, 'ABC', 'DEF', 'GHI');//向指定位置插入新元素
+    console.log(arr)
+
+
+    /**
+     * forEach() 通过回调函数，将元素传递出来；数组有几个元素，函数就调用几次
+     * forEach(参数1,参数2,参数3) 专门用来遍历数组
+     *  参数1：当前被遍历的元素本身
+     *  参数2：当前被遍历的元素索引
+     *  参数3：当前正在被遍历的数组
+     * */
+    arr.forEach(function (el, index, arr) {
+        console.log('el=' + el)
+        console.log('index=' + index)
+        console.log('arr=' + arr)
+    })
+
+</script>
+</body>
+
+</html>

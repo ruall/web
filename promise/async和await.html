@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    const p1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('a')
+        }, 1000)
+    })
+    const p2 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject('err')
+        }, 2000)
+    })
+    const p3 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('c')
+        }, 3000)
+    })
+
+    /*p.then(
+        value => {
+            console.log('成功了', value);
+        },
+        reason => {
+            console.log('失败了', reason);
+        }
+    )*/
+
+    !(async () => {
+        try {
+            const res1 = await p1
+            console.log(res1);
+            const res2 = await p2
+            console.log(res2);
+            const res3 = await p3
+            console.log(res3);
+        } catch (error) {
+            console.log(error);
+        }
+
+    })()
+
+</script>
+
+</body>
+</html>

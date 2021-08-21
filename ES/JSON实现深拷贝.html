@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    /**
+     * JSON实现深拷贝
+     *      * stringify 将JS对象转化为JSON格式的字符串
+     *      * parse 将JSON格式的字符串转化为JS对象
+     *
+     * 缺点：不能复制方法
+     * */
+
+    const obj = {
+        name: 'A',
+        tags: ['A', 'B', 'C'],
+        flag: {
+            name: 'A'
+        },
+        change() {
+            console.log('改变');
+        }
+    }
+
+    //将对象转为JSON格式的字符串
+    let str = JSON.stringify(obj)
+
+    //将字符串转为JS对象
+    let str1 = JSON.parse(str)
+
+    str1.flag.name = 'B'
+
+
+    console.log(obj);
+    console.log(str1);
+
+</script>
+
+</body>
+</html>

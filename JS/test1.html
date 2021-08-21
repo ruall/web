@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*    let x = 1;
+
+        function fn(n) {
+            n = n + 1;
+            return n
+        }
+        let y = fn(x);
+        console.log(y)*/
+
+    /**
+     * a++ 和++a的返回结果不同
+     *      a++返回变量自增前的值
+     *      ++a返回变量自增后的值
+     * */
+    /*let a = 10;
+    // console.log('a++=',a++)
+    console.log('++a=',++a)
+    console.log('a=',a)*/
+    /*let a = Infinity;
+    if(a){
+        alert('啊啊啊啊啊')
+    }*/
+
+    /* let num = +prompt("请输入一个数字！");
+     if(num % 2 ==0){
+         alert(`${num}是一个偶数`)
+     }else{
+         alert(`${num}是一个奇数`)
+     }
+
+     let money = 1000;
+     let count = 0;
+     while (money <5000){
+         money *= 1.05;
+         count++
+     }
+     console.log(`一共存了${count}年`)*/
+
+    /*  let sum = 0;
+      for(let i=0;i<=100;i++){
+          if(i%2 !== 0){
+              sum = sum+i
+          }
+      }
+
+      console.log(sum);*/
+
+    for (let i = 100; i < 1000; i++) {
+        //获取i的百位数
+        let bai = parseInt(i / 100);
+
+        //获取i的十位数
+        let shi = parseInt((i - bai * 100) / 10)
+
+        //获取i的个位数
+        let ge = parseInt(i % 10)
+
+        if (bai ** 3 + shi ** 3 + ge ** 3 === i)
+            console.log(`${i}的百位数是${bai}，十位数是${shi}，个位数是${ge}`)
+    }
+
+
+    /**
+     * 判断输入的数是否是质数
+     *      质数指只能被1和自身整除的数
+     * */
+    let num = +prompt('请输入一个整数：')
+
+    //创建一个变量，记录检查的状态，默认认为num是质数
+    let flag = true;
+    //获取1到num之间的所有数，判断这些数能否整除num
+    for (let i = 2; i < num; i++) {
+        //检查num能否被i整除
+        if (num % i === 0) {
+            //如果num能被i整除，说明num一定不是质数
+            //判断num是质数以后就给变量赋值
+            flag = false
+        }
+    }
+    if (flag) {
+        alert(`${num}是质数`)
+    } else {
+        alert(`${num}不是质数`)
+    }
+
+</script>
+</body>
+</html>

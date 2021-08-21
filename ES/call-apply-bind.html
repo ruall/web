@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .item {
+            box-sizing: border-box;
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 20px 10px 0 10px;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2 class="page-header">点击切换颜色</h2>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item"></div>
+</div>
+
+<script>
+    function add(a, b, c) {
+        console.log(this)
+        console.log(a + b + c)
+    }
+
+    // 立即调用
+    add(1, 2, 3)
+    //call调用
+    add.call({name: 'call'}, 1, 2, 3)
+    //apply调用
+    add.apply({name: 'apply'}, [1, 2, 3])
+    //bind方法
+    let obj = {name: 'obj'}
+    let fn = add.bind(obj)
+    fn(1, 2, 3)
+    console.log(fn);
+
+
+    let item = document.getElementsByClassName('item')
+    for (let i = 0; i < item.length; i++) {
+        item[i].onclick = function () {
+            item[i].style.backgroundColor = 'pink'
+
+        }
+    }
+</script>
+
+</body>
+</html>

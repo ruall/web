@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div onclick="console.log('div')">
+    <p onclick="console.log('p')">
+        Click here!
+    </p>
+</div>
+<script>
+    /*var x = 1
+
+    function fn(n) {
+        n = n + 1
+    }
+
+    y = fn(x)
+    console.log(y)*/
+
+    /*function fn1() {
+        alert(1)
+    }
+
+    alert(fn1())*/
+
+
+    /* fn1()
+     var fn1 = function (a) {
+         alert(a)
+     }*/
+
+    /*var a = 100
+
+    function fn1() {
+        alert(a)
+        var a = 10
+    }
+
+    alert(fn1())*/
+    /*var a = 10
+
+    function test() {
+        a = 100
+        alert(a)
+        alert(this.a)
+        var a;
+        alert(a)
+    }
+
+    test()*/
+
+    /*var foo = 1;
+    (function () {
+        console.log(foo);
+        var foo = 2;
+        console.log(foo);
+    })();*/
+
+    /*var User = {
+        count: 1,
+        getCount: function () {
+            return this.count;
+        }
+    }
+    console.log(User.getCount());
+    var func = User.getCount;
+    console.log(func());*/
+    /*var x = 5;
+    (function () {
+        console.log(x);
+        var x = 10;
+        console.log(x);
+    }());*/
+    /*function employee(name, code) {
+        this.name = "wangli";
+        this.code = "A001";
+    }
+
+    var newemp = new employee("zhangming", 'A002');
+    document.write("雇员姓名:" + newemp.name + " ");
+    document.write("雇员代号:" + newemp.code + " ");*/
+
+    /*function Person(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    const lydia = new Person("Lydia", "Hallie");
+    const sarah = Person("Sarah", "Smith");
+    console.log(lydia);
+    console.log(sarah);*/
+
+    /*function checkAge(data) {
+        if (data === {age: 18}) {
+            console.log("You are an adult!");
+        } else if (data == {age: 18}) {
+            console.log("You are still an adult.");
+        } else {
+            console.log(`Hmm.. You don't have an age I guess`);
+        }
+    }
+
+    checkAge({age: 18});*/
+
+    /*function sayHi() {
+        console.log(name);
+        console.log(age);
+        var name = "Lydia";
+        let age = 21;
+    }
+
+    sayHi();*/
+    /*for (var i = 0; i < 3; i++) {
+        setTimeout(() => console.log(i), 1);
+    }
+    for (let i = 0; i < 3; i++) {
+        setTimeout(() => console.log(i), 1);
+    }*/
+    /* const shape = {
+         radius: 10,
+         diameter() {
+             return this.radius * 2;
+         },
+         perimeter: () => 2 * Math.PI * this.radius
+     };
+     console.log(shape.diameter());
+     console.log(shape.perimeter());*/
+    /*console.log(+true);
+    console.log(!"Lydia");*/
+    /*function sayHi() {
+        return (() => 0)();
+    }
+
+    console.log(typeof sayHi());*/
+    /*let c = {greeting: "Hey!"};
+    let d;
+    d = c;
+    // c = {greeting: "Hello"};
+    c.greeting = "Hello";
+    console.log(d.greeting);*/
+
+    /*let a = 3;
+    let b = new Number(3);
+    let c = 3;
+    console.log(a == b);
+    console.log(a === b);
+    console.log(b === c);*/
+    /*let greeting;
+    greetign = {};
+    console.log(greetign);*/
+    /*function Person(firstName, lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    const member = new Person("Lydia", "Hallie");
+    Person.getFullName = () => this.firstName + this.lastName;
+    console.log(member.getFullName());*/
+    /*function getPersonInfo(one, two, three) {
+        console.log(one);
+        console.log(two);
+        console.log(three);
+    }
+
+    const person = "Lydia";
+    const age = 21;
+    getPersonInfo`${person} is ${age} years old`;*/
+
+    /* function sum(a, b) {
+         return a + b;
+     }
+
+     console.log(sum(1, "2"));*/
+
+    /*function getAge() {
+        age = 21;
+        console.log(age);
+    }
+
+    console.log(getAge());*/
+
+    /*for (let i = 1; i < 5; i++) {
+        if (i === 3) continue;
+        console.log(i);
+    }*/
+
+    /*function getAge(...args) {
+        console.log(typeof args);
+    }
+
+    getAge(21);*/
+
+    /*const sum = eval("10*10+5");
+    console.log(sum)*/
+
+    /* const foo = () => console.log("First");
+     const bar = () => setTimeout(() => console.log("Second"));
+     const baz = () => console.log("Third");
+     bar();
+     foo();
+     baz();*/
+
+    /*const obj = {a: "one", b: "two", a: "three"};
+    console.log(obj);*/
+
+    /*var a = {n: 1}
+    var b = a;
+    a.x = a = {n: 2}
+    console.log(a.x);
+    console.log(b.x)*/
+
+    function Foo() {
+        getName = function () {
+            console.log(1)
+        };
+        return this;
+    }
+
+    Foo.getName = function () {
+        console.log(2)
+    };
+    Foo.prototype.getName = function () {
+        console.log(3)
+    };
+    var getName = function () {
+        console.log(4)
+    };
+
+    function getName() {
+        console.log(5)
+    }
+
+    getName();
+    Foo().getName();
+    new Foo.getName();
+    new Foo().getName();
+    new new Foo().getName();
+    Foo.getName();
+    getName();
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"></script>
+</head>
+<body>
+<button id="btn1">获取所有人信息</button>
+<button id="btn2">获取信息</button>
+<script>
+    const btn1 = document.getElementById('btn1')
+    const btn2 = document.getElementById('btn2')
+
+    const axios2 = axios.create({
+        timeout: 2000,
+        baseURL: 'http://poetry.apiopen.top'
+    })
+    //给axios配置默认属性
+    axios.defaults.timeout = 2000
+    axios.defaults.headers = {school: 'abc'}
+    axios.defaults.baseURL = 'http://localhost:5000'
+
+    btn1.onclick = () => {
+        axios({
+            url: '/persons',//请求地址
+            method: 'GET',//请求方式
+            // params: {a: 1, b: 2},//配置query参数
+            // data: {c: 3, d: 4},//配置请求体参数（JSON）
+            // data: 'e=5&f=6',// 配置请求体参数（urlencoded）
+            // timeout: 2000,//配置请求超时时间
+            // headers: {demo: 123},//配置请求头
+            responseType: 'json',//配置响应数据的格式（默认json）
+        }).then(
+            response => console.log('请求成功', response.data),
+            error => console.log('请求失败', error)
+        )
+    }
+
+    btn2.onclick = () => {
+        axios2.get('/sentences').then(
+            response => console.log('请求成功', response.data),
+            error => console.log('请求失败', error)
+        )
+    }
+</script>
+
+</body>
+</html>

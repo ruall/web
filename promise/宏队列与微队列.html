@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+  宏队列:[宏任务1,宏任务2....]
+  微队列:[微任务1,微任务2....]
+  规则：每次要执行宏队列里的一个任务之前，先看微队列里是否有待执行的微任务
+    1、如果有，先执行微任务
+    2、如果没有，按照宏队列里任务顺序依次执行
+-->
+
+
+<script>
+    /*setTimeout(() => {
+        console.log('timeout');
+    }, 0)
+    Promise.resolve(1).then(
+        value => console.log('成功1', value)
+    )
+    Promise.resolve(2).then(
+        value => console.log('成功2', value)
+    )
+    console.log('主线程');*/
+
+    /**
+     * 输出结果：
+     * 主线程
+     * 成功1 1
+     * 成功2 2
+     * timeout
+     * */
+
+    /*setTimeout(() => {
+        console.log('timeout1');
+        Promise.resolve(5).then(
+            value => console.log(5)
+        )
+    })
+    setTimeout(() => {
+        console.log('timeout2');
+    })
+    Promise.resolve(3).then(
+        value => console.log(3)
+    )
+    Promise.resolve(4).then(
+        value => console.log(4)
+    )*/
+
+    /**
+     * 输出结果：
+     * 3
+     * 4
+     * timeout1
+     * 5
+     * timeout2
+     * */
+
+    setTimeout(() => {
+        console.log('0');
+    }, 0)
+
+    new Promise((resolve, reject) => {
+        console.log('1');
+        resolve()
+    }).then(
+        () => {
+            console.log('2');
+            new Promise((resolve, reject) => {
+                console.log('3');
+                resolve()
+            }).then(() => {
+                console.log('4');
+            }).then(() => {
+                console.log('5');
+            })
+        }
+    ).then(() => {
+        console.log('6');
+    })
+
+    new Promise((resolve, reject) => {
+        console.log('7');
+        resolve()
+    }).then(() => {
+        console.log('8');
+    })
+
+    // 输出结果：1 7 2 3 8 4 6 5 0
+</script>
+
+</body>
+</html>

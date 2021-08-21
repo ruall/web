@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /**
+         * 语法：
+         *   1、 ([参数列表]) => 返回值
+         *   2、 参数 => 返回值
+         *   3、 参数 => {
+         *       代码块
+         *   }
+         * */
+
+        let sum = (a, b) => a + b
+        console.log(sum(123, 456));
+
+        let arr = ['张三', '李四', '王五']
+        arr.forEach(element => console.log(element))
+
+        let fn = ()=>({name:'张三'})
+        console.log(fn())
+    </script>
+</head>
+<body>
+
+</body>
+</html>

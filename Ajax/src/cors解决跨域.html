@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">点击获取数据</button>
+<script type="text/javascript">
+    const btn = document.getElementById('btn')
+    let xhr
+    btn.onclick = () => {
+        xhr = new XMLHttpRequest()
+        xhr.onreadystatechange = () => {
+            if (xhr.readyState === 4) {
+                if (xhr.status >= 200 && xhr.status < 300) {
+                    console.log(xhr.response)
+                    console.log(xhr.getAllResponseHeaders());
+                }
+            }
+        }
+
+        // xhr.open('GET', 'http://localhost:8080/test_cors')
+        xhr.open('PUT', 'http://localhost:8080/test_put')
+        xhr.send()
+    }
+</script>
+</body>
+</html>

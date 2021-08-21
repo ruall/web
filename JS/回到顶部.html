@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>回到顶部</title>
+    <style>
+        #to_top {
+            width: 30px;
+            height: 40px;
+            font: 14px/20px arial;
+            text-align: center;
+            background: #06c;
+            position: fixed;
+            cursor: pointer;
+            color: #fff;
+            right: 150px;
+            top: 500px;
+        }
+    </style>
+</head>
+<body style="height: 2000px;">
+
+<div id="to_top">返回顶部</div>
+
+<script src="./js/jquery-1.10.1.js"></script>
+<script>
+    //固定总时长
+    let time = 2000;
+    //动画帧时长
+    let itemTime = 20;
+    //动画总时长 / 动画帧时长 = 总帧数   总偏移 / 总帧数 = 单词偏移（速度）
+
+    $('#to_top').click(function () {
+        //总偏移
+        let offset = $('html').scrollTop() + $('body').scrollTop();
+        //计算单次偏移
+        let itemOffset = offset / (time / itemTime)
+
+        let timer = setInterval(function () {
+            offset -= itemOffset;
+            if (offset <= 0) {
+                clearInterval(timer)
+            }
+            $(document).scrollTop(offset)
+        }, itemTime)
+    })
+</script>
+</body>
+</html>

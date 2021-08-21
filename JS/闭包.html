@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /**
+         * 闭包：闭包就是能访问到外部函数中变量的内部函数
+         *
+         * 闭包的生命周期：
+         *      当外部函数调用时，闭包便产生了
+         *          外部函数每调用一次就会产生一个闭包
+         *      当内部函数被垃圾回收时，便销毁了
+         * */
+
+        function outer() {
+            let times = 0;
+
+            function inner() {
+                times++;
+                alert(times)
+            }
+
+            return inner;
+        }
+
+        let fn = outer();
+        fn();
+        fn();
+        fn();
+
+        let fn1 = (function(){
+            let times = 0;
+            return function(){
+                alert(++times)
+            }
+        })()
+        fn1()
+        fn1()
+        fn1()
+
+        let a = {x:10}
+        let b = a
+        a.x = a = {n:20}
+        console.log(a.x) //undefined
+    </script>
+</head>
+<body>
+
+</body>
+</html>

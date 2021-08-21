@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+    Promise错误穿透：
+        1、当使用Promise的then链式调用时，可以在最后用catch指定一个失败的回调
+        2、前面任何操作出了错误，都会传到最后失败的回调中处理
+     备注：如果不存在then的链式调用，就不需要考虑then的错误穿透
+-->
+
+<script>
+    function sendAjax(url, data, index) {
+        return new Promise((resolve, reject) => {
+            //实例化xhr
+            const xhr = new XMLHttpRequest()
+            //监听绑定
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState === 4) {
+                    if (xhr.status >= 200 && xhr.status < 300) {
+                        resolve(xhr.response)
+                    } else {
+                        reject(`第${index}请求出了点问题`)
+                    }
+                }
+            }
+
+            //整理参数
+            let str = ''
+            for (let key in data) {
+                str += `${key}=${data[key]}`
+            }
+            str = str.slice(0, -1)
+            xhr.open('GET', url + '?' + str)
+            xhr.responseType = 'json'
+            xhr.send()
+        })
+    }
+
+    let params = {page: 1, count: 2, type: 'video'}
+    //发送第1次请求
+    sendAjax('http://poetry.apiopen.top/sentences', params, 1)
+        .then(
+            value => {
+                console.log('第一次请求成功了', value);
+                //发送第2次请求
+                return sendAjax('http://poetry.apiopen.top/sentences2', params, 2)
+            },
+            /*reason => {
+                console.log('第一次请求失败了', reason);
+                return new Promise(() => {
+                })
+            }*/
+        )
+        .then(
+            value => {
+                console.log('第二次请求成功了', value);
+                //发送第3次请求
+                return sendAjax('http://poetry.apiopen.top/sentences', params, 3)
+            },
+            /*reason => {
+                console.log('第二次请求失败了', reason);
+                return new Promise(() => {
+                })
+            }*/
+        )
+        .then(
+            value => {
+                console.log('第三次请求成功了', value);
+            },
+            /*reason => {
+                console.log('第三次请求失败了', reason);
+                return new Promise(() => {
+                })
+            }*/
+        )
+        .catch(reason => {
+            console.log(reason);
+        })
+
+
+    /**
+     * 另一个例子演示失败的回调
+     * */
+
+    const p1 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject(-1)
+        }, 1000)
+    })
+
+    p1
+        .then(
+            value => {
+                console.log('成功了1', value)
+            },
+            reason => {
+                throw reason
+            }
+        )
+        .then(
+            value => {
+                console.log('成功了2', value)
+            },
+            reason => {
+                throw reason
+            }
+        )
+        .catch(
+            reason => {
+                console.log('失败了', reason)
+            }
+        )
+</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0"/>
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+    在vue中，初始化的data属性数据都是响应式的
+    vue当中处理响应式数据对于数组和对象是不一样的
+        1、如果修改的是对象的属性，都是响应式，因为Vue一开始就为data当中所有的属性通过Object.defineProperty添加了get和set
+        2、数组修改的时候，必须使用特定的几个方法才能是响应式，vue重写了数组的方法，如果直接通过下标操作数组的数据，不能实现响应式
+
+
+-->
+
+<div id="app">
+    <div v-for="(item,index) in persons" :key="item.id">
+        {{item.name}} -- {{item.age}}
+    </div>
+    <button @click="update">修改第一个name</button>
+</div>
+
+<script src="../js/vue.js"></script>
+<script type="text/javascript">
+    Vue.config.productionTip = false
+
+    const vm = new Vue({
+        el: '#app',
+        data() {
+            return {
+                persons: [
+                    {id: 1, name: '张1三1', age: 23},
+                    {id: 2, name: '张12三2', age: 20},
+                    {id: 3, name: '张23三3', age: 18},
+                    {id: 4, name: '张3三4', age: 30},
+                ],
+            }
+        },
+        methods: {
+            update() {
+                //1、
+                this.persons[0].name = '123'
+                //2、
+                this.persons[0] = {id: 1, name: '123', age: 23}
+                //3、splice参数只有两个代表删除，第一个起始位置，第二个删几个
+                //    参数如果是多个，第二个参数是0代表新增，如果不是0代表修改
+                this.persons.splice(0, 1, {id: 1, name: '123', age: 23})
+            }
+        }
+    })
+</script>
+
+</body>
+</html>

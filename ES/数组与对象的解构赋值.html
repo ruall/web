@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    //数组的解构赋值
+    const arr = ['A', 'B', 'C', 'D']
+    let [a, b, c, d] = arr
+    console.log(a, b, c, d)
+
+    //对象的解构赋值
+    const star = {
+        name: '于谦',
+        tags: ['抽烟', '喝酒', '烫头'],
+        say: function () {
+            console.log('说相声')
+        }
+    }
+    // let {name, tags, say} = star
+    // console.log(name, tags, say)
+    let {name, tags: [chou, he, tang], say} = star
+    console.log(chou, he, tang)
+</script>
+
+</body>
+</html>

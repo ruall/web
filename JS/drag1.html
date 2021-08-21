@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .b1 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        .b2 {
+            width: 100px;
+            height: 100px;
+            background-color: #00ffad;
+        }
+
+        .b3 {
+            width: 100px;
+            height: 100px;
+            background-color: #006fff;
+        }
+
+        .drag {
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+
+<div id="box1" class="b1"></div>
+<div id="box2" class="b2 drag"></div>
+<div id="box3" class="b3 drag"></div>
+
+<script>
+
+    (function () {
+        let left, top, hasDrag, dragEle = null;
+
+        document.addEventListener('mousedown', function (e) {
+            e.preventDefault()
+            hasDrag = e.target.classList.contains('drag')
+            if (hasDrag) {
+                dragEle = e.target
+                left = e.clientX - dragEle.offsetLeft
+                top = e.clientY - dragEle.offsetTop
+            }
+        })
+
+        document.addEventListener('mousemove', function (e) {
+            if (dragEle) {
+                dragEle.style.left = e.clientX - left + 'px'
+                dragEle.style.top = e.clientY - top + 'px'
+            }
+        })
+
+        document.addEventListener('mouseup', function (e) {
+            dragEle = null
+        })
+    })()
+</script>
+</body>
+</html>

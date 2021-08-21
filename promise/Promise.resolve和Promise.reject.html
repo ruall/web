@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--
+    Promise.resolve方法：Promise.resolve(value)
+        说明：用于快速返回一个状态为fulfilled或rejected的Promise实例对象
+        备注：value值可能是（1）非Promise值 （2）Promise值
+
+    Promise.reject方法：Promise.reject(reason)
+        说明：用于快速返回一个状态必为rejected的Promise实例对象
+
+    Promise.all方法：Promise.all(promiseArr)
+        promiseArr：包含N个Promise实例的数组
+        说明：返回一个新的Promise实例，只有所有的Promise都成功才成功，只要有一个失败就直接返回失败
+
+     Promise.race方法：Promise.race(promiseArr)
+        promiseArr：包含N个Promise实例的数组
+        说明：返回一个新的Promise实例，成功还是失败以最先出结果的Promise为准
+-->
+
+<script>
+
+    //Promise.resolve  输出成功了 100
+    /*    const p0 = Promise.resolve(100)
+        const p = Promise.resolve(p0)
+        p.then((value) => {
+            console.log('成功了！' + value);
+        }, (reason) => {
+            console.log('失败了！' + reason);
+        })*/
+
+    //Promise.reject
+    /*    const p0 = Promise.resolve(100)
+        const p = Promise.reject(p0)
+        p.then((value) => {
+            console.log('成功了！', value);
+        }, (reason) => {
+            console.log('失败了！', reason);
+        })*/
+
+
+    //Promise.all
+    /*const p1 = Promise.resolve('a')
+    const p2 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('b')
+        }, 500)
+    })
+    const p3 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('c')
+        }, 2000)
+    })
+
+    const x = Promise.all([p1, p2, p3])
+    x.then((value) => {
+        console.log('成功了', value);
+    }, (reason) => {
+        console.log('失败了', reason);
+    })*/
+
+    //Promise.race
+    const p1 = Promise.resolve('a')
+    const p2 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject('b')
+        }, 500)
+    })
+    const p3 = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('c')
+        }, 2000)
+    })
+
+    const x = Promise.race([p1, p2, p3])
+    x.then((value) => {
+        console.log('成功了', value);
+    }, (reason) => {
+        console.log('失败了', reason);
+    })
+</script>
+
+</body>
+</html>

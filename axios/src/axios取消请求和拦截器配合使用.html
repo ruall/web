@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/axios/0.21.1/axios.js"></script>
+</head>
+<body>
+<button id="btn1">获取信息</button>
+<button id="btn2">取消获取</button>
+
+<script type="text/javascript">
+    const btn1 = document.getElementById('btn1')
+    const btn2 = document.getElementById('btn2')
+
+    //CancelToken能为一次请求“打标识”
+    const {CancelToken, isCancel} = axios
+    let cancel;
+
+    axios.defaults.baseURL = 'http://localhost:5000'
+
+    axios.interceptors.request.use((config) => {
+        if (cancel) {
+            cancel('用户取消请求')
+        }
+        config.cancelToken = new CancelToken(c => cancel = c)
+        return config
+    })
+
+    axios.interceptors.response.use(
+        response => {
+            return response.data
+        },
+        error => {
+            if (isCancel(error)) {
+                //如果进入判断，证明：是用户取消的请求
+                console.log('用户取消了请求，原因是：', error.message);
+            } else {
+                console.log(error);
+            }
+            return new Promise(() => {
+            })
+        }
+    )
+
+    btn1.onclick = async () => {
+        const res = await axios.get('/test1?delay=3000')
+        console.log(res);
+    }
+    btn2.onclick = () => {
+        cancel('失败的原因')
+    }
+</script>
+
+</body>
+</html>

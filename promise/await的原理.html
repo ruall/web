@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+    若我们使用async配合await这种写法：
+        1、表面上不出想任何的回调函数
+        2、但实际上底层把我们写的代码进行了加工，把回调函数’还原‘回来了
+        3、最终运行的代码是依然有回调的，只是程序员没有看见
+-->
+
+<script>
+    const p = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve('a')
+        }, 1000)
+    })
+
+    async function demo() {
+        // const res = await p
+        // console.log(res);
+        //上述代码浏览器翻译后如下
+        p.then(
+            res => {
+                console.log(res);
+            }
+        )
+    }
+
+    demo()
+
+    console.log(1);
+</script>
+</body>
+</html>

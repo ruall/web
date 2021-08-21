@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+
+<body>
+<script>
+    /**
+     * 1.将数组中元素赋值给对象
+     *    let [变量1,变量2,变量3,...变量n] = 数组;
+     *
+     * 2.将数组中的元素拆分作为参数传递
+     *    fn(...数组)
+     *
+     * 3.对对象的解构
+     *    let {变量1,变量2} = 对象
+     * */
+
+    let arr = [1, 2, 3, 4, 5, 6, 7];
+    let [a, b, ...c] = arr;
+
+    function sum(a, b, c) {
+        return a + b + c;
+    }
+
+    let arr2 = [123, 456, 789]
+    sum(...arr2)
+
+
+    let obj = {name: '孙悟空', age: 18, gender: '男'}
+    let {name, age, gender} = obj
+</script>
+</body>
+
+</html>

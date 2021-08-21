@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+
+<script>
+
+
+    //数组的展开
+    const arr = ['张三', '李四', '王五', '赵六']
+
+    function fn() {
+        console.log(arguments)
+    }
+
+    fn(...arr)
+    //上面写法等同于 fn('张三', '李四', '王五', '赵六')
+
+
+    //对象的展开
+    const a1 = {
+        a: 'A',
+        b: 'B'
+    }
+    const a2 = {
+        b: 'BB'
+    }
+    const a3 = {
+        c: 'C'
+    }
+
+    const a4 = {...a1, ...a2, ...a3}
+    console.log(a4);
+
+
+    //数组合并
+    const arr1 = ['a', 'b']
+    const arr2 = ['c', 'd']
+    const arr3 = [...arr1, ...arr2]
+    console.log(arr3);
+
+    //新数组克隆
+    const arr4 = ['e', 'f', 'g']
+    const arr5 = [...arr4, 'h', 'i', 'j']
+    console.log(arr5)
+
+    //将为数组转为真数组
+    const divs = document.getElementsByTagName('div')
+    const res = [...divs]
+    console.log(res);
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+
+    //拷贝 就是 复制   对象和数组
+    // 1、直接复制 (浅拷贝)
+    // let arr = [1, 2, 3, 4]
+    // const newArr = arr
+    // newArr[0] = 521
+    // console.log(arr);
+    // console.log(newArr);
+
+    // 2、数组
+    /**
+     * 1>concat (浅拷贝)
+     * 2>slice （浅拷贝）
+     * 3>扩展运算符 (浅拷贝)
+     * */
+        // concat方法测试
+        // let arr = [{name: 'A'}, 2, 3, 4]
+        // let newArr = [].concat(arr)
+        // newArr[0].name = 'AAA'
+        // console.log(arr);
+        // console.log(newArr);
+
+        //slice方法测试
+        // let arr = [{name: 'A'}, 2, 3, 4]
+        // let newArr = arr.slice(0)
+        // newArr[0].name = 'AAA'
+        // console.log(arr);
+        // console.log(newArr);
+
+        //扩展运算符测试
+        // let arr = [{name: 'A'}, 2, 3, 4]
+        // let newArr = [...arr]
+        // newArr[0].name = 'AAA'
+        // console.log(arr);
+        // console.log(newArr);
+
+
+        // 3、对象  使用assign方法创建对象 (浅拷贝)
+    let obj = {
+            name: 'AA',
+            tags: [1, 2, 3, 4],
+            age: 20
+        }
+    let obj1 = Object.assign({}, obj)
+    obj1.name = 'BB'
+    obj1.tags[0] = 521
+    console.log(obj); //AA
+    console.log(obj1); //BB
+
+</script>
+
+</body>
+</html>

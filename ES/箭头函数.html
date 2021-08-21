@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+
+<div id="ad"></div>
+
+<script>
+
+    let ad = document.getElementById('ad')
+
+    //点击div两秒后背景色变黄
+    ad.onclick = function () {
+        let that = this
+
+        // 原始写法
+        // setTimeout(function () {
+        //     that.style.backgroundColor = 'yellow'
+        // }, 2000)
+
+        //箭头函数写法
+        setTimeout(() => {
+            this.style.backgroundColor = 'yellow'
+        }, 2000)
+    }
+
+
+    //返回数组中的偶数
+    let arr = [1, 342, 3, 2, 41, 42, 31, 431, 3, 1, 1, 3131, 31, 546, 1, 3123, 12]
+
+    //普通写法
+    // let res = arr.filter(function (item) {
+    //     if (item % 2 === 0) {
+    //         return true
+    //     } else {
+    //         return false
+    //     }
+    // })
+
+    //箭头函数写法
+    let res = arr.filter(item => item % 2 === 0)
+    console.log(res)
+
+
+    //箭头函数
+    let add = (a, b, c) => {
+        let res = a + b + c
+        return res
+    }
+
+    console.log(add(1, 2, 3));
+
+
+    /**
+     * 箭头函数的特点
+     *      1、this的值是静态的
+     *      2、不能作为构造函数使用
+     *      3、不能使用arguments
+     *      4、箭头函数简写
+     * */
+
+        //箭头函数简写
+        //1-不写小括号，当形参有且只有一个的时候
+
+
+        //2、不写花括号，当代码体只有一条语句的时候，并且语句的执行结果为函数返回值的（如果不写花括号的话，return也不能写）
+    let fn = m => m ** 2
+    console.log(fn(3));
+
+    let rand = (m, n) => Math.floor(Math.random() * (n - m + 1)) + m - 1
+    console.log(rand(1, 10));
+</script>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width,initial-scale=1.0"/>
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let obj = {
+        firstName: 'zhao',
+        lastName: 'liying'
+    }
+    /*obj.fullName = 'zhao_liying'
+    console.log(obj);*/
+    /*    Object.defineProperty(obj, 'fullName', {
+            get() {
+                //当访问对象的fullName属性
+            },
+            set() {
+                //当设置对象的fullName属性
+            }
+        })*/
+
+    Object.defineProperties(obj, {
+        fullName: {
+            get() {
+                //当访问对象的fullName属性
+                return this.firstName + '-' + this.lastName
+            },
+            set(val) {
+                //当设置对象的fullName属性
+                let arr = val.split('-')
+                this.lastName = arr[1]
+                this.firstName = arr[0]
+            }
+        }
+    })
+    obj.fullName = "liu-yifei"
+    console.log(obj);
+
+    //模拟数据代理
+    let vm = {}
+    let data = {msg: 'aaa'}
+    Object.defineProperties(vm, {
+        msg: {
+            get() {
+                return data.msg
+            },
+            set(val) {
+                data.msg = val
+            }
+        }
+    })
+    console.log(vm.msg);
+    vm.msg = 'bbb'
+    console.log(vm.msg);
+    console.log(data);
+</script>
+</body>
+</html>

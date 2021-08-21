@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态属性</title>
+</head>
+<body>
+
+<script>
+    let banji = {
+        name: 'html',
+        scores: [
+            {
+                name: 'a',
+                score: 55
+            },
+            {
+                name: 'b',
+                score: 30
+            },
+            {
+                name: 'c',
+                score: 95
+            },
+            {
+                name: 'd',
+                score: 84
+            },
+            {
+                name: 'e',
+                score: 73
+            },
+        ]
+    }
+    Object.defineProperties(banji, {
+        total: {
+            get() {
+                let j = 0
+                for (let i = 0; i < this.scores.length; i++) {
+                    j += this.scores[i].score
+                }
+                return j
+            }
+        },
+        avg: {
+            get() {
+                return this.total / this.scores.length
+            }
+        }
+    })
+    console.log(banji)
+</script>
+
+</body>
+</html>
