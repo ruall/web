@@ -1,18 +1,41 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <p>ts</p>
+  <div>
+    <Header></Header>
+    <div class="container">
+      <Add :addComment="addComment"></Add>
+      <List :coms="comments" :delComment="delComment"></List>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Add from '@/components/Add'
+import Header from '@/components/Header'
+import List from '@/components/List'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Add,
+    Header,
+    List
+  },
+  data() {
+    return {
+      comments: [
+        {id: 1, content: 'Vue牛逼', username: '张三'},
+        {id: 2, content: 'Vue很好', username: '李四'},
+        {id: 3, content: 'Vue很难', username: '王五'},
+      ]
+    }
+  },
+  methods: {
+    addComment(com) {
+      this.comments.unshift(com)
+    },
+    delComment(index) {
+      this.comments.splice(index, 1)
+    }
   }
 }
 </script>

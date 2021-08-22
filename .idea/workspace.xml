@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="webpack4创建vue项目" />
+    <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="webpack4创建vue项目">
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/public/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Add.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Item.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/List.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/vue.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/HelloWorld.vue" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,10 +26,10 @@
       <list>
         <option value="HTTP Request" />
         <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="Less File" />
-        <option value="Vue Single File Component" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -68,28 +79,28 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="format.on.save" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vue-study/vuecomponents/public/css" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="zielu.gittoolbox.app.config.v2" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\学习视频\web\vue-study\vuecomponents\public\css" />
       <recent name="D:\学习视频\web\webpack-study" />
       <recent name="D:\学习视频\web\axios\src" />
       <recent name="D:\学习视频\web\axios\server" />
       <recent name="D:\学习视频\web\promise" />
-      <recent name="D:\学习视频\web\js" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\学习视频\web\vue-study\vuecomponents\src\components" />
       <recent name="D:\学习视频\web\vue-study\vueBase" />
       <recent name="D:\学习视频\web\vue-study\components" />
       <recent name="D:\学习视频\web\webpack-study\src" />
       <recent name="D:\学习视频\web\webpack\js" />
-      <recent name="D:\学习视频\web\模块化\ES6_modular\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.test">
@@ -194,6 +205,8 @@
       <workItem from="1629537973569" duration="384000" />
       <workItem from="1629538402829" duration="1673000" />
       <workItem from="1629542170410" duration="706000" />
+      <workItem from="1629605399612" duration="2933000" />
+      <workItem from="1629625773396" duration="7002000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1629532146714</created>
@@ -293,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629542279346</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="webpack4创建vue项目">
+      <created>1629556033726</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1629556033726</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -326,7 +346,8 @@
     <MESSAGE value="test1" />
     <MESSAGE value="vue" />
     <MESSAGE value="1" />
-    <option name="LAST_COMMIT_MESSAGE" value="1" />
+    <MESSAGE value="webpack4创建vue项目" />
+    <option name="LAST_COMMIT_MESSAGE" value="webpack4创建vue项目" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
