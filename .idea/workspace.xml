@@ -4,37 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="vue props 父子组件传值">
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/server.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Main.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Search.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_$emit/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_$emit/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_$emit/components/Footer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_$emit/components/Header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_$emit/components/Item.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_$emit/components/List.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_$emit/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_props/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_props/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_props/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vue插槽/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vue插槽/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vue插槽/components/Child.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vue插槽/components/ScopedChild.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vue插槽/main.js" afterDir="false" />
+    <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="vue 插槽">
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Header.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/views/About.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/views/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_axios搜索案例/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_axios搜索案例/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_axios搜索案例/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vuex/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vuex/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vuex/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vuex/store/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vuex优化搜索案例/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vuex优化搜索案例/assets/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vuex优化搜索案例/components/Main.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vuex优化搜索案例/components/Search.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vuex优化搜索案例/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_vuex优化搜索案例/store/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/babel.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/public/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Add.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_props/components/Add.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_props/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Item.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_props/components/Item.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/List.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_comments_props/components/List.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_axios搜索案例/components/Main.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_axios搜索案例/components/Search.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/vue.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/vue.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +94,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="format.on.save" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vue-study/vuecomponents/src/components" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/vue-study/vuecomponents" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -109,8 +104,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\学习视频\web\vue-study\vuecomponents\src\components" />
       <recent name="D:\学习视频\web\vue-study\vuecomponents" />
+      <recent name="D:\学习视频\web\vue-study\vuecomponents\src\components" />
       <recent name="D:\学习视频\web\vue-study\vuecomponents\public\css" />
       <recent name="D:\学习视频\web\webpack-study" />
       <recent name="D:\学习视频\web\axios\src" />
@@ -230,6 +225,7 @@
       <workItem from="1629682925243" duration="12231000" />
       <workItem from="1629702760646" duration="219000" />
       <workItem from="1629702994543" duration="12756000" />
+      <workItem from="1629773328778" duration="10270000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1629532146714</created>
@@ -336,7 +332,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629556033726</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="vue 插槽">
+      <created>1629773989915</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1629773989915</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +373,8 @@
     <MESSAGE value="vue" />
     <MESSAGE value="1" />
     <MESSAGE value="webpack4创建vue项目" />
-    <option name="LAST_COMMIT_MESSAGE" value="webpack4创建vue项目" />
+    <MESSAGE value="vue 插槽" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue 插槽" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
