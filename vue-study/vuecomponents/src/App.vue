@@ -1,52 +1,24 @@
 <template>
-  <div>
-    <Header></Header>
-    <div class="container">
-      <Add :addComment="addComment"></Add>
-      <List :coms="comments" :delComment="delComment"></List>
-    </div>
+  <div class="container">
+    <Search></Search>
+    <Main></Main>
+    <el-button type="primary">主要按钮</el-button>
   </div>
 </template>
 
 <script>
-import Add from '@/components/Add'
-import Header from '@/components/Header'
-import List from '@/components/List'
+import Search from './components/Search'
+import Main from './components/Main'
 
 export default {
-  name: 'App',
+  name: '',
   components: {
-    Add,
-    Header,
-    List
-  },
-  data() {
-    return {
-      comments: [
-        {id: 1, content: 'Vue牛逼', username: '张三'},
-        {id: 2, content: 'Vue很好', username: '李四'},
-        {id: 3, content: 'Vue很难', username: '王五'},
-      ]
-    }
-  },
-  methods: {
-    addComment(com) {
-      this.comments.unshift(com)
-    },
-    delComment(index) {
-      this.comments.splice(index, 1)
-    }
+    Search,
+    Main
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+
 </style>

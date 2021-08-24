@@ -38,7 +38,10 @@ export default {
           username,
           content
         }
-        this.addComment(obj)
+        //props 传值方法
+        // this.addComment(obj)
+        //自定义事件调用回调传值
+        this.$emit('addComment', obj)
       } else {
         alert('请输入合法的值！！！')
       }
