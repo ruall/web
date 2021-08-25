@@ -1,38 +1,51 @@
 <template>
   <div>
-    <div class="container">
-      <Header></Header>
-    </div>
-    <div class="container">
-      <div class="row">
-        <!-- Nav tabs -->
-        <ul class="nav nav-stacked col-md-6" role="tablist">
-          <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
-                                                    data-toggle="tab">Home</a></li>
-          <li role="presentation"><a href="#About" aria-controls="About" role="tab" data-toggle="tab">About</a>
-          </li>
-        </ul>
-        <!-- Tab panes -->
-        <div class="tab-content col-md-6">
+    <Child>
+      <template>
+        <button>按钮</button>
+      </template>
+      <template slot="abc">
+        <p>abc</p>
+      </template>
+    </Child>
 
-
-        </div>
-      </div>
-    </div>
+    <Child>
+      <template>
+        <p>AAA</p>
+      </template>
+      <template slot="abc">
+        <p>aaa</p>
+      </template>
+    </Child>
+    <ScopedChild :todos="todos">
+      <template slot-scope="scopeProps">
+        <span v-if="scopeProps.todo.isOver" style="color: hotpink">√ {{ scopeProps.todo.content }}</span>
+      </template>
+    </ScopedChild>
   </div>
 </template>
 
 <script>
-import Header from "@/components/Header";
+import Child from "@/components/Child";
+import ScopedChild from "@/components/ScopedChild";
 
 export default {
-  name: '',
+  name: 'App',
   components: {
-    Header
+    Child,
+    ScopedChild
+  },
+  data() {
+    return {
+      todos: [
+        {id: 1, content: '抽烟', isOver: false},
+        {id: 2, content: '喝酒', isOver: false},
+        {id: 3, content: '烫头', isOver: true},
+      ]
+    }
   }
 }
 </script>
 
-<style scoped>
-
+<style>
 </style>
