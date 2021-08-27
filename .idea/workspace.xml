@@ -4,27 +4,142 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="vue vuex案例">
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_router/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_router/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_router/views/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_router/views/Message.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_router/views/MessageDetail.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_router/views/News.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_router/views/NewsDetail.vue" afterDir="false" />
+    <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="vue 组件传参的十种方法">
+      <change afterPath="$PROJECT_DIR$/微信小程序/wechat_demo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/app.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/app.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/components/NavHeader/NavHeader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/components/NavHeader/NavHeader.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/components/NavHeader/NavHeader.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/components/NavHeader/NavHeader.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/miniprogram_npm/moment/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/miniprogram_npm/moment/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/miniprogram_npm/pubsub-js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/miniprogram_npm/pubsub-js/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/otherPackage/pages/other/other.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/otherPackage/pages/other/other.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/otherPackage/pages/other/other.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/otherPackage/pages/other/other.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/index/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/index/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/index/index.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/index/index.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/login/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/login/login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/login/login.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/login/login.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/personal/personal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/personal/personal.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/personal/personal.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/personal/personal.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/search/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/search/search.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/search/search.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/search/search.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/video/video.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/video/video.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/video/video.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/pages/video/video.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/project.config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/reserve/login/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/reserve/login/login.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/reserve/login/login.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/reserve/login/login.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/reserve/personal/personal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/reserve/personal/personal.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/reserve/personal/personal.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/reserve/personal/personal.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/sitemap.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/pages/recommendSong/recommendSong.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/pages/recommendSong/recommendSong.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/pages/recommendSong/recommendSong.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/pages/recommendSong/recommendSong.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/pages/songDetail/songDetail.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/pages/songDetail/songDetail.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/pages/songDetail/songDetail.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/pages/songDetail/songDetail.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/iconfont/iconfont.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/nvsheng.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/personal/arc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/personal/bgImg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/personal/bgImg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/personal/missing-face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/personal/user-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/personal/vip-card-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/recommendSong/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/recommendSong/08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/recommendSong/recommendSong.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/song/disc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/song/needle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/center-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/center.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/home-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/tab-cart-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/tab-cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/tab-cate-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/tab-cate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/tab-home-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/tab-home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/tab-my-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/tabs/tab-my.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/songPackage/static/images/video/video.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/iconfont/iconfont.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/nvsheng.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/personal/arc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/personal/bgImg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/personal/bgImg2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/personal/missing-face.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/personal/user-bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/personal/vip-card-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/recommendSong/02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/recommendSong/08.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/recommendSong/recommendSong.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/song/disc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/song/needle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/center-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/center.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/home-active.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/select.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/selected.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/tab-cart-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/tab-cart.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/tab-cate-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/tab-cate.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/tab-home-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/tab-home.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/tab-my-current.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/tabs/tab-my.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/static/images/video/video.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/template/myTemplate/myTemplate.wxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/template/myTemplate/myTemplate.wxss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/utils/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/微信小程序/硅谷云音乐/utils/request.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Header.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_router/components/Header.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/router/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/views/About.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_router/views/About.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src/views/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src_vue插槽/App.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src_vue插槽/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_router/assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src_vue插槽/components/Child.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/Child.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src_vue插槽/components/ScopedChild.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src/components/ScopedChild.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue-study/vuecomponents/src_vue插槽/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue-study/vuecomponents/src_router/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/微信小程序/wechat_demo/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/微信小程序/wechat_demo/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/app.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/微信小程序/wechat_demo/app.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/pages/index/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/微信小程序/wechat_demo/pages/index/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/pages/index/index.wxml" beforeDir="false" afterPath="$PROJECT_DIR$/微信小程序/wechat_demo/pages/index/index.wxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/pages/index/index.wxss" beforeDir="false" afterPath="$PROJECT_DIR$/微信小程序/wechat_demo/pages/index/index.wxss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/pages/logs/logs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/pages/logs/logs.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/pages/logs/logs.wxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/pages/logs/logs.wxss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/project.config.json" beforeDir="false" afterPath="$PROJECT_DIR$/微信小程序/wechat_demo/project.config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/微信小程序/wechat_demo/utils/util.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +338,8 @@
       <workItem from="1629773328778" duration="19290000" />
       <workItem from="1629821081942" duration="877000" />
       <workItem from="1629821974973" duration="3000" />
-      <workItem from="1629856848946" duration="7662000" />
+      <workItem from="1629856848946" duration="8954000" />
+      <workItem from="1630031442405" duration="1288000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1629532146714</created>
@@ -344,7 +460,14 @@
       <option name="project" value="LOCAL" />
       <updated>1629793843819</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="vue 组件传参的十种方法">
+      <created>1629901497022</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1629901497022</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +503,8 @@
     <MESSAGE value="webpack4创建vue项目" />
     <MESSAGE value="vue 插槽" />
     <MESSAGE value="vue vuex案例" />
-    <option name="LAST_COMMIT_MESSAGE" value="vue vuex案例" />
+    <MESSAGE value="vue 组件传参的十种方法" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue 组件传参的十种方法" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
