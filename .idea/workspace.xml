@@ -4,19 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="微信小程序学习">
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/main.js" afterDir="false" />
+    <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="VUE总结">
+      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/components/GuideFooter/GuideFooter.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/components/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/components/Personal.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/pages/Buy/Buy.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/pages/Cart/Cart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/pages/Category/Category.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/pages/Home/Home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/pages/Login/Login.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/router/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/vue.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_总结/vue_test/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue_总结/vue_test/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_总结/vue_test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue_总结/vue_test/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_总结/vue_test/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_总结/vue_test/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vue_总结/vue_test/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +223,8 @@
       <workItem from="1629856848946" duration="8954000" />
       <workItem from="1630031442405" duration="1288000" />
       <workItem from="1630055595785" duration="233000" />
-      <workItem from="1630120338204" duration="6656000" />
+      <workItem from="1630120338204" duration="6733000" />
+      <workItem from="1630203665487" duration="12370000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1629532146714</created>
@@ -353,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1630055788817</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="VUE总结">
+      <created>1630152853259</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1630152853260</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +404,8 @@
     <MESSAGE value="vue vuex案例" />
     <MESSAGE value="vue 组件传参的十种方法" />
     <MESSAGE value="微信小程序学习" />
-    <option name="LAST_COMMIT_MESSAGE" value="微信小程序学习" />
+    <MESSAGE value="VUE总结" />
+    <option name="LAST_COMMIT_MESSAGE" value="VUE总结" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
