@@ -5,23 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfe7c537-178c-45d9-a8e9-43fc1c4fedf9" name="更改" comment="VUE总结">
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/components/GuideFooter/GuideFooter.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/components/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/components/Personal.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/pages/Buy/Buy.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/pages/Cart/Cart.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/pages/Category/Category.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/pages/Home/Home.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/pages/Login/Login.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/router/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vue_总结/vue_test/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TS/TS01/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TS/TS01/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TS/TS01/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TS/TS02/build/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TS/TS02/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TS/TS02/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TS/TS02/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TS/TS02/src/01-基础类型.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TS/TS02/src/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TS/TS02/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_总结/vue_test/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue_总结/vue_test/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_总结/vue_test/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/vue_总结/vue_test/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_总结/vue_test/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_总结/vue_test/src/components/HelloWorld.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vue_总结/vue_test/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/vue_总结/vue_test/src/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +29,11 @@
         <option value="HTTP Request" />
         <option value="CSS File" />
         <option value="Less File" />
+        <option value="Vue Single File Component" />
+        <option value="tsconfig.json" />
         <option value="HTML File" />
         <option value="JavaScript File" />
-        <option value="Vue Single File Component" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -89,9 +86,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/vue-study/vuecomponents" />
     <property name="list.type.of.created.stylesheet" value="Less" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="settings.typescriptcompiler" />
+    <property name="ts.external.directory.path" value="C:\Users\Admin\AppData\Roaming\npm\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -103,11 +103,11 @@
       <recent name="D:\学习视频\web\axios\src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\学习视频\web\TS\TS01" />
       <recent name="D:\学习视频\web\vue-study\vuecomponents" />
       <recent name="D:\学习视频\web\vue-study\vuecomponents\src\components" />
       <recent name="D:\学习视频\web\vue-study\vueBase" />
       <recent name="D:\学习视频\web\vue-study\components" />
-      <recent name="D:\学习视频\web\webpack-study\src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.test">
@@ -224,7 +224,14 @@
       <workItem from="1630031442405" duration="1288000" />
       <workItem from="1630055595785" duration="233000" />
       <workItem from="1630120338204" duration="6733000" />
-      <workItem from="1630203665487" duration="12370000" />
+      <workItem from="1630203665487" duration="13396000" />
+      <workItem from="1630289423676" duration="1829000" />
+      <workItem from="1630323359814" duration="65000" />
+      <workItem from="1630331272497" duration="1845000" />
+      <workItem from="1630380340694" duration="1851000" />
+      <workItem from="1630387666012" duration="5503000" />
+      <workItem from="1630413851938" duration="391000" />
+      <workItem from="1630414257832" duration="5936000" />
     </task>
     <task id="LOCAL-00001" summary="test">
       <created>1629532146714</created>
@@ -366,11 +373,26 @@
       <option name="project" value="LOCAL" />
       <updated>1630152853260</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="VUE总结">
+      <created>1630219707157</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1630219707157</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/TS/TS02/src/main.js" />
+        <option value="$PROJECT_DIR$/TS/TS02/src/main.js.map" />
+        <option value="$PROJECT_DIR$/TS/TS02/src/01-基础类型.js.map" />
+        <option value="$PROJECT_DIR$/TS/TS02/src/01-基础类型.js" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
